@@ -1,0 +1,37 @@
+/* =================================
+fonts - START
+==================================== */
+@font-face {
+  font-family: "fontin";
+  src: url("../fonts/fontin/Fontin-Regular.otf");
+}
+
+@font-face {
+  font-family: "fontin italic";
+  src: url("../fonts/fontin/Fontin-Italic.otf");
+}
+
+@font-face {
+  font-family: "fontin bold";
+  src: url("../fonts/fontin/Fontin-Bold.otf");
+}
+
+@font-face {
+  font-family: "fontin smallcaps";
+  src: url("../fonts/fontin/Fontin-SmallCaps.otf");
+}
+
+/* =================================
+fonts - END
+==================================== */
+
+/* =================================
+custom properities - START
+==================================== */
+html {
+  --bloody: rgb(170, 0, 0);
+  --bones: rgb(227, 218, 201);
+}
+/* =================================
+custom properities - END
+==================================== */

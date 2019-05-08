@@ -1,0 +1,456 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "fontin", sans-serif;
+  color: var(--bones);
+}
+
+/* =================================
+header - START
+==================================== */
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url("../img/nonComic_1280x698.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 1.5em;
+  text-align: center;
+}
+
+header .nickname h1 {
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+  font-size: 1.5em;
+  letter-spacing: 1.5px;
+}
+.nickname input {
+  margin: 0.5em 0 0 0;
+  font-family: "fontin bold", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.8em;
+  width: 9em;
+}
+
+header h2 {
+  font-size: 1.8em;
+  width: 90%;
+  margin: 1em auto;
+}
+
+header p {
+  margin: 0.8em;
+  font-size: 1.6em;
+}
+header p input {
+  width: 3em;
+  line-height: 1.8em;
+  text-align: center;
+  font-family: "fontin bold", sans-serif;
+  font-size: 0.7em;
+}
+header input:disabled {
+  background-color: #ccc;
+  color: black;
+}
+
+header .active,
+header .unActive,
+.clue button {
+  background-color: var(--bloody);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  width: 100px;
+  height: 45px;
+  color: var(--bones);
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  border: 2px dashed black;
+}
+
+/* =================================
+header - END
+==================================== */
+
+/* =================================
+Instruction - START
+==================================== */
+
+.popup {
+  position: fixed;
+  top: 4%;
+  left: 4%;
+  right: 4%;
+  height: 600px;
+  background-image: linear-gradient(to top, black, orange 300%);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--bones);
+  z-index: 1;
+}
+.popup button {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 30px;
+  height: 30px;
+  font-size: 2em;
+  font-family: "fontin bold", sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--bones);
+}
+
+.popup h3 {
+  margin: 2em 0.8em 2em 0.8em;
+  text-align: center;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  font-size: 1.6em;
+}
+.popup p {
+  margin: 0.5em 1em 1.5em 1em;
+  font-size: 1.07em;
+  text-align: justify;
+}
+
+.popup footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 0.8em;
+}
+
+.popup footer p {
+  text-align: center;
+}
+
+.instruction {
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: var(--bloody);
+  font-size: 1.5em;
+  color: var(--bones);
+}
+
+.notActive {
+  display: none;
+}
+/* =================================
+Instruction - END
+==================================== */
+
+/* =================================
+Generator - START
+==================================== */
+
+.clue {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--bones);
+  text-align: center;
+}
+.clue input {
+  font-family: "fontin", sans-serif;
+  width: 3em;
+  text-align: center;
+  font-size: 0.9em;
+  height: 1.8em;
+}
+
+.custom {
+  padding-top: 1em;
+  margin: 0 1em 0 1em;
+}
+
+.demands {
+  margin: 0 1em 2em 1em;
+  padding-top: 1.5em;
+}
+.result {
+  padding-bottom: 2em;
+}
+.clue .subtitle {
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 0.7em;
+  width: 100%;
+}
+
+.custom p,
+.demands p {
+  margin-top: 0.7em;
+  text-align: center;
+  font-size: 1.2em;
+}
+.custom form p:first-child {
+  width: 100%;
+  text-align: center;
+}
+.custom form p:first-child input {
+  width: 10em;
+}
+
+.custom button {
+  margin-top: 1.5em;
+  transition: 0.3s;
+}
+
+.result button {
+  width: 5.5em;
+}
+
+.invisible {
+  text-align: center;
+  font-size: 1.3em;
+  margin-left: 2em;
+  margin-top: 1.5em;
+  margin-right: 2em;
+  opacity: 0;
+  border: 2px dashed var(--bloody);
+}
+
+/* =================================
+Generator - END
+==================================== */
+
+/* =================================
+Main - START
+==================================== */
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2em;
+}
+
+.main .ring {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: linear-gradient(200deg, black, var(--bloody) 150%);
+  padding-bottom: 0.4em;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid var(--bones);
+  width: 100%;
+  text-align: center;
+}
+.main .ring:first-child {
+  border-top: 1px solid var(--bones);
+}
+
+.main .ring p {
+  width: 33%;
+  padding: 0 0.4em;
+}
+.main .ring p:first-child {
+  width: 100%;
+  padding: 0.4em;
+  font-size: 1.4em;
+}
+.main .ring button {
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.1em;
+  font-size: 0.9em;
+  font-family: "fontin", sans-serif;
+  background-color: var(--bloody);
+  color: var(--bones);
+}
+
+.main .coldBGC {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url("../img/coldBGC.jpg");
+}
+.main .lightningBGC {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../img/lightningBGC1.jpg");
+}
+.main .fireBGC {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url("../img/fireBGC.jpg");
+}
+.main .ring,
+.fireBGC,
+.coldBGC,
+.lightningBGC {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+/* =================================
+        Main - END
+==================================== */
+
+/* =================================
+        ALERT - START
+==================================== */
+.alert {
+  display: none;
+}
+
+.alert.on {
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  z-index: 100;
+}
+
+.alert .content {
+  max-width: 40vh;
+  min-height: 20vh;
+  background-color: var(--bloody);
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 2px 2px 10px 5px black;
+  border-radius: 15px;
+}
+.alert button {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 25px;
+  border: none;
+  outline: none;
+  font-family: "fontin", sans-serif;
+  border-radius: 15px;
+  box-shadow: 4px 2px 10px 2px black;
+}
+
+.alert .content p {
+  padding: 1.5em 1em 2em 1em;
+
+  text-align: center;
+  font-size: 1.3em;
+}
+
+/* =================================
+        ALERT - END
+==================================== */
+
+/* =================================
+Media - START
+==================================== */
+
+@media (min-width: 720px) {
+  .wrap {
+    display: flex;
+  }
+  header,
+  .clue {
+    width: 50%;
+  }
+  .main .ring {
+    width: 50%;
+    flex-grow: 1;
+    border: 1px solid var(--bones);
+  }
+  header {
+    padding-top: 5em;
+  }
+  .popup p {
+    font-size: 1.5em;
+  }
+  .popup h3 {
+    font-size: 2.1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  header .nickname h1 {
+    padding-top: 1.5em;
+    font-size: 2.5em;
+  }
+
+  .main .ring {
+    width: 50%;
+  }
+
+  header h2 {
+    font-weight: normal;
+  }
+  .clue p {
+    font-size: 1.6em;
+  }
+
+  .popup p {
+    padding-bottom: 1.3em;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, black, var(--bloody) 300%);
+  }
+  header h2 {
+    font-size: 2.2em;
+  }
+  .clue .subtitle {
+    font-size: 2.2em;
+  }
+  .main .ring {
+    width: 33%;
+  }
+  .main .ring button:hover,
+  .result button,
+  .custom button,
+  header button {
+    cursor: pointer;
+  }
+  .instruction {
+    left: calc(50% - 620px);
+  }
+  .popup {
+    min-width: 1200px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+/* =================================
+Media - END
+==================================== */

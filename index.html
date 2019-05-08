@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Resistances Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/features.css" />
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+  </head>
+
+  <body>
+    <div class="wrap">
+    <header class="myCharacter">
+      <form action="">
+        <div class="nickname">
+          <h1>Please enter your nickname:</h1>
+          <input type="text" />
+        </div>
+        <h2>Your actual resistances </br>(without rings):</h2>
+
+        <p class="myFire">Fire: <input type="number" /></p>
+        <p class="myCold">Cold: <input type="number" /></p>
+        <p class="myLightning">Lightning: <input type="number" /></p>
+        <button class="active">Save</button>
+      </form>
+    </header>
+
+      <section class="clue">
+        <article class="custom">
+          <p class="subtitle">Specify your ring</p>
+          <form action="">
+            <p>Name: <input class="name" type="text" /></p>
+            <p>Fire: <input class="fire" type="number" /></p>
+            <p>Cold: <input class="cold" type="number" /></p>
+            <p>Lightning: <input class="lightning" type="number" /></p>
+            <button>Add</button>
+          </form>
+        </article>
+
+        <article class="demands">
+          <p class="subtitle">Enter your expectations</p>
+          <form action="">
+            <p>Fire: <input class="fire" type="number" /></p>
+
+            <p>Cold: <input class="cold" type="number" /></p>
+
+            <p>Lightning: <input class="lightning" type="number" /></p>
+          </form>
+        </article>
+
+        <article class="result">
+          <button>Calculate</button>
+          <p class="invisible">
+            The best pair would be: </br><span class="firstRing"></span></br>&</br>
+            <span class="secondRing"></span>
+          </p>
+        </article>
+      </section>
+      <button class="instruction"><i class="fas fa-info"></i></button>
+
+      <aside class="alert">
+        <div class="content"></div>
+        <button>Consider it done!</button>
+      </aside>
+    </div>
+
+
+      <aside class="popup notActive">
+        <button>x</button>
+        <h3>Path of Exile resistances calculator</h3>
+        <p>
+          Rewind how many times you had tons of "good" rings in
+          your stash - using this tool you can check the best pair to gap your
+          resistances at 75%.
+        </p>
+        <p>
+          All you have to do is fill information about your actual resistances
+          (without rings). Then add all your rings with name and information
+          about specific resistances (in case of lack of information about x
+          resistance in your ring please input 0) and calculate!
+        </p>
+        <footer>
+          <p>
+            In case of any problem or ideas to make this calculator better
+            please contact me at: piotrrr1994@gmail.com
+          </p>
+        </footer>
+      </aside>
+
+      <main class="main">
+
+      </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
