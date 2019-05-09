@@ -265,3 +265,12 @@ document.querySelector(".result button").addEventListener("click", calculate);
 /* =================================
         Calculation - END
 ==================================== */
+
+/* =================================
+        Year actualization - Start
+==================================== */
+let date = new Date();
+document.querySelector(".siteFooter p span").textContent = date.getFullYear();
+/* =================================
+        Year actualization - END
+==================================== */
