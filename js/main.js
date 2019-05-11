@@ -257,6 +257,10 @@ const bestPair = () => {
 
   document.querySelector(".firstRing").textContent = splitName[0];
   document.querySelector(".secondRing").textContent = splitName[1];
+  document.querySelector(".sumFire").textContent = filteredRings[0].fire;
+  document.querySelector(".sumCold").textContent = filteredRings[0].cold;
+  document.querySelector(".sumLightning").textContent =
+    filteredRings[0].lightning;
   document.querySelector(".invisible").style.opacity = 1;
 };
 

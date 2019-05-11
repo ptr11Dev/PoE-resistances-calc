@@ -226,12 +226,21 @@ Generator - START
 
 .invisible {
   text-align: center;
-  font-size: 1.3em;
   margin-left: 2em;
   margin-top: 1.5em;
   margin-right: 2em;
+  padding: 1em;
   opacity: 0;
   border: 2px dashed var(--bloody);
+}
+
+.invisible p {
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+.result .sum {
+  display: inline-block;
+  padding-left: 1em;
 }
 
 /* =================================

@@ -13,25 +13,25 @@
     />
     <link rel="stylesheet" href="style/features.css" />
     <link rel="stylesheet" href="style/styles.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   </head>
 
   <body>
     <div class="wrap">
-    <header class="myCharacter">
-      <form action="">
-        <div class="nickname">
-          <h1>Please enter your nickname:</h1>
-          <input type="text" />
-        </div>
-        <h2>Your actual resistances </br>(without rings):</h2>
+      <header class="myCharacter">
+        <form action="">
+          <div class="nickname">
+            <h1>Please enter your nickname:</h1>
+            <input type="text" />
+          </div>
+          <h2>Your actual resistances <br />(without rings):</h2>
 
-        <p class="myFire">Fire: <input type="number" /></p>
-        <p class="myCold">Cold: <input type="number" /></p>
-        <p class="myLightning">Lightning: <input type="number" /></p>
-        <button class="active">Save</button>
-      </form>
-    </header>
+          <p class="myFire">Fire: <input type="number" /></p>
+          <p class="myCold">Cold: <input type="number" /></p>
+          <p class="myLightning">Lightning: <input type="number" /></p>
+          <button class="active">Save</button>
+        </form>
+      </header>
 
       <section class="clue">
         <article class="custom">
@@ -58,10 +58,16 @@
 
         <article class="result">
           <button>Calculate</button>
-          <p class="invisible">
-            The best pair would be: </br><span class="firstRing"></span></br>&</br>
-            <span class="secondRing"></span>
-          </p>
+          <div class="invisible">
+            <p>
+              The best pair would be: <br /><span class="firstRing"></span> &
+              <span class="secondRing"></span><br />
+            </p>
+
+            <p class="sum">Fire: <span class="sumFire"></span></p>
+            <p class="sum">Cold: <span class="sumCold"></span></p>
+            <p class="sum">Lightning: <span class="sumLightning"></span></p>
+          </div>
         </article>
       </section>
       <button class="instruction"><i class="fas fa-info"></i></button>
@@ -72,37 +78,32 @@
       </aside>
     </div>
 
-
-      <aside class="popup notActive">
-        <button>x</button>
-        <h3>Path of Exile resistances calculator</h3>
+    <aside class="popup notActive">
+      <button>x</button>
+      <h3>Path of Exile resistances calculator</h3>
+      <p>
+        Rewind how many times you had tons of "good" rings in your stash - using
+        this tool you can check the best pair to gap your resistances at 75%.
+      </p>
+      <p>
+        All you have to do is fill information about your actual resistances
+        (without rings). Then add all your rings with name and information about
+        specific resistances (in case of lack of information about x resistance
+        in your ring please input 0) and calculate!
+      </p>
+      <footer>
         <p>
-          Rewind how many times you had tons of "good" rings in
-          your stash - using this tool you can check the best pair to gap your
-          resistances at 75%.
+          In case of any problem or ideas to make this calculator better please
+          contact me at: piotrrr1994@gmail.com
         </p>
-        <p>
-          All you have to do is fill information about your actual resistances
-          (without rings). Then add all your rings with name and information
-          about specific resistances (in case of lack of information about x
-          resistance in your ring please input 0) and calculate!
-        </p>
-        <footer>
-          <p>
-            In case of any problem or ideas to make this calculator better
-            please contact me at: piotrrr1994@gmail.com
-          </p>
-        </footer>
-      </aside>
-
-      <main class="main">
-
-      </main>
-
-      <footer class="siteFooter">
-        <p>Copyright &copy; <span></span> Piotr Kaczmarek</p>
-
       </footer>
+    </aside>
+
+    <main class="main"></main>
+
+    <footer class="siteFooter">
+      <p>Copyright &copy; <span></span> Piotr Kaczmarek</p>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
