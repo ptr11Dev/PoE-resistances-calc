@@ -345,7 +345,7 @@ Main - START
 
 .alert .content {
   max-width: 40vh;
-  min-height: 20vh;
+  height: 25vh;
   background-color: var(--bloody);
   position: relative;
   top: 30%;
@@ -356,7 +356,7 @@ Main - START
 }
 .alert button {
   position: absolute;
-  top: 45%;
+  top: calc(30% + 25vh - 25px);
   left: 50%;
   transform: translateX(-50%);
   width: 150px;
@@ -369,8 +369,7 @@ Main - START
 }
 
 .alert .content p {
-  padding: 1.5em 1em 2em 1em;
-
+  padding: 0.8em 1em 1em 1em;
   text-align: center;
   font-size: 1.3em;
 }
@@ -397,6 +396,16 @@ Footer - END
 /* =================================
 Media - START
 ==================================== */
+@media (min-width: 640px) and (orientation: landscape) {
+  .alert .content {
+    max-width: 70%;
+    height: 33vh;
+  }
+
+  .alert button {
+    top: calc(30% + 33vh - 25px);
+  }
+}
 
 @media (min-width: 720px) {
   .wrap {
