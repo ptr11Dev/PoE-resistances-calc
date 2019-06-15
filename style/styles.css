@@ -10,7 +10,10 @@ body {
   font-family: "fontin", sans-serif;
   color: var(--bones);
 }
-
+/* test */ 
+.test{
+  font-size: 1em;
+}
 /* =================================
 header - START
 ==================================== */
